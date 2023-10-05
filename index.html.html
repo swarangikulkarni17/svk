@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="" rel="stylesheet">
+	<title>nike</title>
+
+<style type="text/css">
+	*{
+		box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+		font-family:"Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+   
+	}
+	/NEVIGATION MENU STARTS/
+
+	
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  border: transparent;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right:;
+  text-decoration: none;
+  color: black;
+}
+
+.header li a:hover,
+.header .menu-btn:hover{
+  background-color: #f4f4f4;
+ 
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 20px 20px;
+ 
+  
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+@media (min-width: 768px ) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .symbol {
+    display: block;
+  }
+}
+   
+
+.grid-container{
+ display: grid;
+  grid-template-columns: auto auto ;
+  gap: 20px;
+ justify-content: center;
+ position: relative;
+ align-content: center;
+}
+.grid-item {
+  background-color:transparent;
+  border:none;
+  
+ text-align: center;
+ 
+}
+.grid-item img {
+  opacity: 1.0;
+}
+.grid-item img:hover {
+  opacity:0.8;
+}
+.grid-text{
+   
+}
+.trending{
+  display: grid;
+  grid-template-columns:auto ;
+  position: relative;
+}
+.trending-text{
+    position: absolute;
+    margin-left:15%;
+    margin-top:20%;
+    color: white;
+ 
+}
+.trending-text p{
+ margin-top: 10px;
+}
+.gender-container{
+    display: grid;
+  grid-template-columns: auto auto  auto ;
+  gap: 10px;
+  
+ padding: 0 10% 10% 10%;
+}
+.gender-item {
+  background-color:transparent;
+  border:none;
+  justify-content: center;
+
+}
+.gender-item img :hover{
+  opacity:1;
+}
+
+
+
+h4{
+    padding-top: 5px;
+}
+/footer/
+#list-items{
+            display: inline-flex;
+		float: right;
+    }
+    #list-options{
+        align-items: center;
+        padding-right: 100px;
+        padding-top:10px ;
+        padding-bottom:10px ;
+
+    }
+    #footerpage{
+        background-color:#2e2d2b;
+        
+    }
+    #bottomlist{
+         display: inline-flex;
+         padding-top: 200px;
+   }
+   #bottomlisti{
+    align-items: center;
+        padding-right: 100px;
+   }
+   footer p{
+    color: white;
+    font-family: "Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+   }
+   
+   h2{
+    padding-top: 100px;
+   }
+    p{
+        font-size: 12px;
+     
+    }
+    .footer-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 200px;
+  gap: 10px;
+ margin-bottom: 20px;
+  padding: 10px;
+}
+
+.footer-container > div {
+  background-color: transparent;
+  text-align: center;
+  font-size: 14px;
+  text-align: left;
+  font-family:"Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+  color: white;
+  padding: 40px;
+}
+footer h5{
+    padding-bottom: 20px;
+}
+h3{
+    font-weight:bolder;
+    padding-bottom: 10px;
+    font-family:"Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+    font-size: 50px;    
+}
+.paragraph p{
+    padding-top:0%;
+    margin-top: 0%;
+}
+p{
+    font-size: 16px;
+}
+.footer-images{
+   display: inline-flex;
+}
+.last-line{
+    display: inline-flex; 
+    
+}
+.last-line>p{
+   padding-right: 20px;
+   
+}
+.head{
+
+    padding-top: 20px;
+    margin-left: 10%;
+    padding-bottom: 20px;
+}
+.head p{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+button{
+         font-weight: 700;
+    	font-size: 14px;
+        height: 35px;
+        width: 100px;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        background:black;
+        color:white;
+        border-width: 1px;
+        border-radius: 20px;
+        border-color: transparent;
+        
+    }
+     Button:hover{
+    	background-color:lightgrey;
+    	cursor:pointer;
+        color: black;
+        border-color: transparent;
+    }
+    img{
+        border-radius: 5px;
+    }
+    .trending button{
+        font-size: 14px;
+        height: 35px;
+        width: 100px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        background:white;
+        color:black;
+        border-color: none;
+    border-color: transparent;
+        border-radius: 20px;
+
+    }
+    .trending Button:hover{
+    	background-color:lightgrey;
+    	cursor:pointer;
+        color: black;
+        border-color: transparent;
+        
+    }
+    .home-images{
+     position: relative;
+    }
+    #infotext{
+	text-align: center;
+	margin: 60px;
+  position: relative;
+}
+
+
+    /grid card /
+    .container{
+  width:250px;
+  margin:0px auto;
+}
+.product-container h4,p{
+    margin:5% 0 0 0  ;
+}
+.product-container p{
+    margin:0 0 0 0  ;
+}
+
+/* Style the counter cards */
+.card {
+  
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border-radius:10px;
+  cursor:pointer;
+}
+.card .profile{
+   border-radius:10px;
+   transition: 0.2s;
+}
+.card:hover .profile{
+  
+  border-top-right-radius:50px;
+  border-top-left-radius:50px;
+}
+
+.card .content{
+  width:100%;
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+.card .content .back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color: #f1f1f1e6;
+  transition:1s;
+  
+  z-index:1;
+  padding:10px;
+}
+.from-bottom{
+  top:100%;
+  left:0;
+}
+.card:hover .content .from-bottom {
+   top:0%;
+}
+.card .content .back h3{
+  font-size:15px;
+  letter-spacing:2px;
+}
+
+.card .content .back .des{
+  font-size:13px;
+  padding:10px 0px;
+}
+
+.product-container{
+align-content: center;
+display: grid;
+  grid-template-columns: auto auto auto auto ;
+ justify-content: center;
+  gap: 20px;
+}
+.product-item {
+  background-color:transparent;
+  border:none;
+  gap: 40px;
+ text-align: center;
+ 
+}
+.product-item button{
+    margin-top: 20px;
+}
+.Jordan{
+  display: grid;
+  grid-template-columns: auto;
+ justify-content: center;
+ 
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 300px) 
+{
+  .home-video{
+  .picture1{
+    display: none;}
+    .picture2{
+      display: grid;
+    }
+ }
+
+  .grid-container{
+    display: grid;
+  grid-template-columns: auto ;
+  }
+
+  .trending{
+    display: grid;
+  grid-template-columns: auto ;
+  .picture1{
+    display: none;}
+    .picture2{
+      display: grid;
+    }
+  }
+  .trending-text{
+    position: relative;
+    color: black;
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+
+  .trending button{
+      background:black;
+        color:white;
+    }
+    
+
+  .product-container{
+  display: grid;
+  grid-template-columns: auto ;
+  }
+
+  .Jordan{
+    display: grid;
+  grid-template-columns: auto ;
+  .picture1{
+    display: none;}
+    .picture2{
+      display: grid;
+    }
+ }
+ .gender-container{
+    display: grid;
+  grid-template-columns: auto ;
+  justify-content: center;
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+video{
+  width: 100%;
+  height: 800px;
+}
+  }
+  
+ 
+
+
+
+@media (min-width: 600px) 
+{
+  .home-video{
+  .picture1{
+    display:grid;}
+    .picture2{
+      display: none;
+    }
+  }
+
+  .grid-container{
+    display: grid;
+  grid-template-columns: auto ;
+  }
+
+  .trending{
+    display: grid;
+  grid-template-columns: auto ;
+  .picture1{
+    display:grid;}
+    .picture2{
+      display: none;
+    }
+    }
+    .trending-text{
+    position: relative;
+    color: black;
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+  .trending button{
+      background:black;
+        color:white;
+    }
+   .product-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  }
+  .Jordan{
+    display: grid;
+  grid-template-columns: auto ;
+  .picture1{
+    display:grid;}
+    .picture2{
+      display: none;
+    }
+  }
+  .gender-container{
+    display: grid;
+  grid-template-columns: auto auto  auto ;
+  justify-content: center;}
+
+  .footer-container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+}
+
+
+
+
+@media (min-width: 950px) 
+{
+  .home-video{
+  .picture1{
+    display:grid;}
+    .picture2{
+      display: none;
+    }
+  }
+
+  .grid-container{
+    display: grid;
+  grid-template-columns: auto auto;
+  }
+
+  .trending{
+    display: grid;
+  grid-template-columns: auto ;
+  .picture1{
+    display:grid;}
+    .picture2{
+      display: none;
+    }
+  }
+  .trending-text{
+    position:absolute;
+    color:white;
+    margin-top: 20%;
+    margin-left: 15%;
+  }
+  .trending button{
+         background:white;
+        color:black;
+       
+    }
+    .product-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  }
+  .Jordan{
+    display: grid;
+  grid-template-columns: auto ;
+  .picture1{
+    display:grid;}
+    .picture2{
+      display: none;
+    }
+  }
+  .gender-container{
+    display: grid;
+  grid-template-columns: auto auto  auto ;
+  justify-content: center;
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+  
+
+
+}
+
+video {
+    position:relative;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    
+}
+.gender-img:hover{
+  opacity: 0.8;
+}
+.gender-img{
+ 
+  opacity: 1.0;
+  
+}
+
+
+
+
+
+	</style>
+	</head>
+	
+	<body>
+		<div id="page">
+        
+			
+<header class="header">
+  
+  <a href=" ">
+    <img src="C:\Users\Swarangi\Documents\CSS\shoes website\pngimg.com - nike_PNG11.png" alt="HTML tutorial" class="logo" style="width:100px;">
+    </a>
+    
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#work">New & featured</a></li>
+    <li><a href="#work">Men</a></li>
+    <li><a href="#about">Women</a></li>
+    <li><a href="#careers">kids</a></li>
+    <li><a href="#contact">Sale</a></li>
+    <li class="symbol"><a href=""><img src="C:\Users\Swarangi\Downloads\54481.png" width="15px"></a></li>
+    <li class="symbol"><a href=""><img src="C:\Users\Swarangi\Downloads\user.png" width="15px"></a></li>
+  </ul>
+</header>
+
+<div class="home-video">
+  <video muted loop autoplay>
+    <source src="C:\Users\Swarangi\Downloads\pexels_videos_2788 (1080p).mp4" type="video/mp4" width="100%" height="1000px">
+  </video>
+  </div>
+
+
+	<div id="infotext">
+		<div class="paragraph">
+		<h4>Nike InfinityRN 4</h4>
+        <h3>YOUR SUPPORT SYSTEM</h3>
+          <p>All-new ReactX foam, stretchy Flyknit and a wider midsole offer a system of support<br>
+            that moves you smoothly through every stride.</p>
+            <button>Shop</button>
+        </div>
+    </div>
+
+    <div class="head">
+        <p >Just In</p>
+
+    </div>
+
+    <div class="grid-container" >
+        <div class="grid-item">
+             <img src="C:\Users\Swarangi\Downloads\504d5787-8150-41b8-b629-6b2337ffc283.webp" height="400px">
+             <div>
+                <p>Avalible on the Nike app</p>
+             <h4>LeBronXXL</h4>
+             <button>Get It First</button>
+             </div>
+               
+         </div>
+        <div class="grid-item">
+             <img src="C:\Users\Swarangi\Downloads\2b21d5fe-f48d-48df-834a-f45c95def4da.webp" height="400px">
+             <div class="grid-text">
+                <p>Avalible on the Nike app</p>
+                <h4>Nike Clam Mule</h4>
+                <button>Get It First</button>
+            </div>
+		</div>
+     </div>
+
+     <div class="head">
+     <p> Trending</p>
+    </div>
+     <div class="trending">
+        <img src="C:\Users\Swarangi\Downloads\3f021283-7961-47af-ba6c-f7c080f8e2a0.webp" class="picture1" width="80%" style="margin: 0 10% 0 10%;">
+        <img src="C:\Users\Swarangi\Downloads\3f021283-7961-47af-ba6c-f7c080f8e2a0.jpg" class="picture2"  width="80%" style="margin: 0 10% 0 10%;">
+        <div class="trending-text">
+            <p>Serena Williams Design Crew Collection</p>
+
+            <h3>MAKE A STATEMENT</h3>
+            
+           <p> The Fall 2023 SWDC continue the vision of the future of design,<br>produced by a diverse team of creatives and inspired by Serena<br>
+             hersel</p>
+             <button>Shop Now</button>
+            </div>
+     </div>
+     
+    
+
+     <div class="head">
+        <p>New Arrivals</p>
+
+    </div>
+
+    <div class="product-container" >
+        <div class="product-item"> 
+            <div class="card">
+                <div class="content">
+                  <div class="front">
+                    <img class="profile" height="250px" src="C:\Users\Swarangi\Downloads\1247bf75-da35-455f-9dce-7cd9b4526a95.webp" alt="Ronaldo">
+                    <h4>Nike Air Max Pulse </h4>
+                      <p>Men's Shoes</p>
+                  </div>
+                  <div class="back from-bottom">
+                    <h4>Nike Air Max Pulse </h4>
+                      <p>Men's Shoes</p>
+                    <h3>Rs 13,993</h3>
+                    <br>
+                    <p class="des">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                    </p>
+                    <button> Buy Now</button>
+                    
+                  </div>
+                </div>
+              </div>
+                
+         </div>
+        
+         <div class="product-item">
+                <div class="card">
+                    <div class="content">
+                      <div class="front">
+                        <img class="profile" height="250px" src="C:\Users\Swarangi\Downloads\aa5a276b-715d-4da7-bac2-159edaed11b6.webp" alt="Ronaldo">
+                        <h4>Nike Air Max 90</h4>
+                          <p>Men's Shoes</p>
+                      </div>
+                      <div class="back from-bottom">
+                        <h4>Nike Air Max 90</h4>
+                          <p>Men's Shoes</p>
+                        <h3>Rs 13,993</h3>
+                        <br>
+                        <p class="des">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                        </p>
+                        <button> Buy Now</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+         </div>
+    
+        
+         <div class="product-item">
+                <div class="card">
+                    <div class="content">
+                      <div class="front">
+                        <img class="profile" height="250px" src="C:\Users\Swarangi\Downloads\92e3e335-e95a-462d-a555-78f5b1d14cf4.webp" alt="Ronaldo">
+                        <h4>Nike Air Force 1</h4>
+                          <p>Women's Shoes</p>
+                      </div>
+                      <div class="back from-bottom">
+                        <h4>Nike Air Force 1</h4>
+                          <p>Women's Shoes</p>
+                        <h3>Rs 13,993</h3>
+                        <br>
+                        <p class="des">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                        </p>
+                        <button> Buy Now</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+        </div>  
+        
+        <div class="product-item"> 
+                <div class="card">
+                    <div class="content">
+                      <div class="front">
+                        <img class="profile" height="250px" src="C:\Users\Swarangi\Downloads\76c30d20-3e2b-4e77-bf42-7ffe21f5adc6.webp" alt="Ronaldo">
+                        <h4>Nike Air Max 97</h4>
+                          <p>Men's Shoes</p>
+                      </div>
+                      <div class="back from-bottom">
+                        <h4>Nike Air Max 97</h4>
+                          <p>Men's Shoes</p>
+                        <h3>Rs 13,993</h3>
+                        <br>
+                        <p class="des">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                        </p>
+                        <button> Buy Now</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+        </div>  
+        
+    </div>
+    <div class="head">
+        <p>Yoga</p>
+
+    </div>
+
+    <div class="product-container" >
+        <div class="product-item"> 
+                
+                <div class="card">
+                    <div class="content">
+                      <div class="front">
+                        <img class="profile" height="250px" src="C:\Users\Swarangi\Downloads\3efb0b3b-43ec-438c-9df5-ff299592c3d9.webp" alt="Ronaldo">
+                        <h4>Nike Universa</h4>
+                         
+                      </div>
+                      <div class="back from-bottom">
+                        <h4>Nike Universa</h4>
+                        <p class="des">Women's Medium-Support <br>High-Waisted shorts with Pockets </p>
+                        <h3>Rs 13,993</h3>
+                        <br>
+                        <p class="des">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in 
+                        </p>
+                        <button> Buy Now</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                
+         </div>
+        
+        
+         <div class="product-item"> 
+         <div class="card">
+        <div class="content">
+          <div class="front">
+            <img class="profile" height="250px" src="C:\Users\Swarangi\Downloads\3e9593fb-aef4-4194-8a1d-7325c12bfa3a.webp" alt="Ronaldo">
+            <h4>Nike Go</h4>
+             
+          </div>
+          <div class="back from-bottom">
+            <h4>Nike Go</h4>
+            <p class="des">Women's Medium-Support  <br>High-WaistedLeggings with Pockets</p>
+            <h3>Rs 13,993</h3>
+            <br>
+            <p class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in 
+            </p>
+            <button> Buy Now</button>
+            
+          </div>
+        </div>
+      </div>
+    
+                
+                
+         </div>
+        <div class="product-item"> 
+            
+      <div class="card">
+        <div class="content">
+          <div class="front">
+            <img class="profile" height="250px" src="C:\Users\Swarangi\Downloads\518d67bb-5382-41a1-81ff-d5a52798427c.webp" alt="Ronaldo">
+            <h4>Nike Go</h4>
+             
+          </div>
+          <div class="back from-bottom">
+            <h4>Nike Go</h4>
+            <p  class="des">Women's Medium-Support<br> High-Waisted Cropped Leggings with Pockets</p>
+            <h3>Rs 13,993</h3>
+            <br>
+            <p class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in 
+            </p>
+            <button> Buy Now</button>
+            
+          </div>
+        </div>
+      </div>
+                
+                
+        </div>  
+        <div class="product-item"> 
+      <div class="card">
+        <div class="content">
+          <div class="front">
+            <img class="profile" height="250px" src="C:\Users\Swarangi\Downloads\47aafc2b-ba0f-4913-a015-32839c5c8fc4.webp" alt="Ronaldo">
+            <h4>Nike Go</h4>
+             
+          </div>
+          <div class="back from-bottom">
+            <h4>Nike Go</h4>
+            <p class="des">Women's Medium-Support<br> High-Waisted Leggings with Pockets</p>
+            <h3>Rs 13,993</h3>
+            <br>
+            <p class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in
+            </p>
+            <button> Buy Now</button>
+            
+          </div>
+        </div>
+      </div>
+                
+                
+        </div>  
+        
+    </div>
+
+
+    <div class="head">
+        <p>Jordan Basketball</p>
+     </div>
+     <div class="Jordan" >
+        <img src="C:\Users\Swarangi\Downloads\4e39f035-b7e1-415b-8e83-6d4284a49a53.webp" class="picture1"width="80%" style="margin: 0 10% 2% 10%;">
+        <img src="C:\Users\Swarangi\Downloads\4e39f035-b7e1-415b-8e83-6d4284a49a53.jpg" class="picture2"width="80%" style="margin: 0 10% 2% 10%;">
+        <div class="paragraph"style="text-align: center;">
+        <h3>DRY-FIT ADV SPORT TOP</h3>
+          <p>A shirt that won't get in the way of your game, the Jordan Dri-FIT ADV sport top features a lightweight,sweat-wicking<br> 
+            materials to help youstay dry no matter how hard you go</p>
+            <button>Shop</button>
+        </div>
+     </div>
+     
+
+
+    <div  class="head">
+        <p >The Essentials</p>
+     </div>
+
+    <div class="gender-container" >
+        <div class="gender-item">
+             <img src="C:\Users\Swarangi\Downloads\d94bfa7e-9357-406a-a124-1940712dfa0b.webp"  class="gender-img"   height="300px">
+           <div class="gender-button"> <button>Men's</button></div>
+               
+         </div>
+        <div class="gender-item">
+             <img src="C:\Users\Swarangi\Downloads\dc62b322-5c3f-4508-b21c-950683ed460f.webp"  class="gender-img"  height="300px">
+             
+             <div class="gender-button"><button>Women's</button></div>
+		</div>
+        <div class="gender-item">
+            <img src="C:\Users\Swarangi\Downloads\58359474-a0de-4329-959c-55d1652d0912.webp"  class="gender-img"  height="300px">
+           <div class="gender-button"><button>Kid's</button></div>
+       </div>
+     </div>
+     <footer>
+        <div id="footerpage" >
+            
+
+            <div class="footer-container">
+                <div>
+                  <h5>FIND A STORE</h5>
+                  <h5>BECOME A MEMBER</h5>
+                  <h5>SEND US FEEDBACK</h5>
+                  <h5>STUDEN DISCOUNT</h5>
+                      
+               </div>
+                <div>
+                    <h5>GET HELP</h5>
+                    <p>  Order status </p>
+                    <p>Delivery</p>
+                    <p>Returns</p>
+                    <p>Payment options</p>
+                    <p>Contact us on Nike.com inquiries</p>
+                 </div>
+                <div>
+                  <h5>ABOUT NIKE</h5>
+                  <p> News</p>
+                    <p>Careers</p>
+                    <p>Investors </p>
+                    <p>Sustainability</p>
+              </div>  
+                <div class="footer-images">
+                <div>
+                    <img src="C:\Users\Swarangi\Downloads\facebook.png" width="30px">
+                </div>
+                <div>
+                    <img src="C:\Users\Swarangi\Downloads\instagram.png"  width="30px"
+                >
+                </div>
+               </div>
+               
+                
+              </div>
+              <div class="last-line">
+               <div class="lsright"><p class="imp">© 2023 Nike, Inc. All Rights Reserved</p></div> 
+               <p>guides</p>
+                <p>Terms of sales</p>
+                <p> Terms of use </p>
+                <p> Nike privacy policy </p>
+           
+             </div>
+            
+        
+        
+        
+        
+        </div>
+     </footer>
+
+     
+	
+
+
+		</body>
+		</html>
